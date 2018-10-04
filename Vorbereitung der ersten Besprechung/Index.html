@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            .grid {
+                top: 0;
+                left: 0;
+                display: grid;
+                grid-gap: 50px;
+                grid-template-areas:
+                    'header header header header'
+                    'left   main   main   right'
+                    'foot   foot   foot   foot'
+            }
+            
+            div.sector:target {
+                visibility: visible;
+                grid-area: main;
+            }
+
+            div.sector {
+                visibility: hidden;
+                grid-area: main;
+            }
+            
+            div.start {
+                visibility: visible;
+                grid-area: main;
+            }
+            
+            div.sector:target~div.start {
+                visibility: hidden;
+                grid-area: main;
+            }
+
+            .header{
+                grid-area: header;
+                width: 100%;
+                height: 35px;
+                padding-top: 5px;
+                -webkit-box-shadow: 0 0 8px 0 #000000;
+                -moz-box-shadow: 0 0 8px 0 #000000;
+                box-shadow: 0 0 8px 0 #000000;
+                background-color: rgba(1, 1, 1, 0.8);
+                color: rgba(1, 1, 1, 0.8);
+                overflow: visible;
+            }
+
+            .header a{
+                color: white;
+                text-decoration: none;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+            }
+            
+            .references > li {
+                list-style-type: none;
+            }
+            
+            .references .reference * {
+                display: inline-block;
+                text-indent: initial;
+            }
+            
+            .references .reference>.journal {
+                display: inline-block;
+                font-style: italic;
+            }
+            
+            .references .reference>.journal>.pages {
+                font-style: normal;
+            }
+            
+            .references .reference>.journal>.numpages {
+                display: none;
+            }
+            
+            .pages>.to::before{
+                content:"-"
+            }
+       
+            .journal ::before {
+                content: ", ";
+            }
+            
+            .journal :first-child::before {
+                content: "";
+            }
+            
+            .journal>.number::before { content: "(";}
+            
+            .journal>.number::after { content: ")";}
+            
+            .journal::after{
+                content: ".";
+            }
+            
+            .doi::before{
+                content: "doi:"
+            }
+            
+            .url::before {
+                content: "Retrieved from\A";
+                white-space: pre-line;
+            }
+            
+            .title::after{
+                content: ".";
+            }
+            
+            .issue-date::before {
+                content: "(";
+            }
+            
+            .issue-date::after {
+                content: ").";
+            }
+            
+            .lastname::after {
+                content: ", ";
+            }
+            
+            .author>.firstname {
+                font-size: 0;
+                
+            }
+            
+            .author>.firstname::first-letter {
+                font-size: 1rem;
+            }
+            
+            .firstname::after {
+                content: ". ";
+                font-size: 1rem;
+            }
+            
+            .author:not(:only-child) :last-child::after {
+                content: "., "
+            }
+            
+            .author:last-child:not(:only-child)::before {
+                content: "& "
+            }
+                        
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+    
+            <div class="sector" id="zusammenfassung">
+               <h1>Einfluss der Datenbasis</h1>
+
+                Die Datenbasis hat einen großen Einfluss auf das Ergebnis eines Algorithmus, da sie die Grundlage bildet auf der ein Algorithmus arbeitet. <br/>
+                Dies Bedeutet ,dass jene Muster, welche sich in der Datenbasis befinden, auch im Ergebnis des Algorithmus wieder zu finden sein werden. <br/>
+                Sollte also die Datenbasis Daten enthalten, welche z.B. unter Vorhandensein von Vorurteilen entstanden sind, <br/>
+                spiegeln dies die Daten und damit auch die Ergebnisse des Algorithmus wieder. <br/>
+                Dies stellt ein Problem da, weil immer mehr Algorithmen zur automatischen Entscheidungsfindung verwendet werden. <br/>
+                Es stellt sich daher die Frage, wie wir die Datenbasis kuratieren können, wenn eigentlich jeder von uns Vorurteilen unterliegt. <br/>
+                Sollte es uns nicht gelingen diese Frage zu klären, könnten jegliche Vorurteile ins Fundament der digitalen, <br/>
+                automatischen Entscheidungsfindung ein zementiert werden. <br/>
+                Sollte uns dies aber andererseits gelingen, wird dies helfen, Personen, welche unter Vorurteilen leiden, <br/>
+                eine faire Chance zu geben, da ein solcher Algorithmus unabhängig von Religion, Hautfarbe, Geschlecht etc. entscheiden würde. <br/>
+                Die Datenbasis kann aber nicht nur Vorurteile widerspiegeln. Sie kann auch auf andere Weisen problematisch sein, <br/>
+                indem sie etwa veraltet ist und daher nicht dem aktuellen Stand der Tatsachen entspricht (z.B. alte Karte im Navi). <br/>
+                Es können auch Details fehlen, welche zu einem besseren Ergebnis führen würden (z.B. live Einspeisung der Verkehrslage/Baustellen/Unfälle ins Navi). <br/>
+            </div>
+            
+            <div class="sector" id="anregungen">
+                <ul>
+                    <li>
+                        <b>Frage:</b> <i>Wer von den Anwesenden denkt das wenn sein/ihr Studium von einem vor-urteilenden Algorithmus abgehangen hätte, er/sie heute nicht hier wäre und warum?</i>
+                    </li>
+                    <li>
+                        <b>Erzählung:</b> <i>Navi passte aufgrund einer <u>während der fahrt</u> mitgeteilten Baustelle die Strecke automatisch an und Informierte über diese Anpassung.</i><br/>
+                        
+                        <b>Fragen:</b> 
+                        <ol>
+                            <li>
+                                <i>Was hat dies mit der Datenbasis zu tun? </i><br/>
+                                <b>Antwort:</b> Die Datenbasis wurde um die Information über die Baustelle ergänzt.
+                            </li>
+                            <li>
+                                <i>Ist jemandem Persönlich auch etwas vergleichbares passiert? </i><br/>
+                                Also etwas wo in einer realen Situation eine Datenbasisänderung direkt ersichtliche auswirkungen hatte.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Szenario</h2>
+                        <ol>
+                            <li>
+                                Einführung:<br/>
+                                    Das Publikum ist ein Entscheidungsalgorithmus beim BND.<br/>
+                                    Es folgen die Fakten zu einer Person auf Grundlage derer eine Entscheidung zu treffen ist.
+                            </li>
+                            <li>
+                                Fakten:<br/>
+                                <ol>
+                                    <li>Besuchen von vielen Seiten zum Thema <b>ISIS</b></li>
+                                    <li>Besuchen von vielen Seiten zu <b>Explosiven</b> Gemischen</li>
+                                    <li>Kauf einer Angelweste</li>
+                                    <li>Kauf von Rohren</li>
+                                    <li>Kauf verschiedene Haushaltsmittel</li>
+                                    <li>Last-Minute Kauf von Karten für einen großen Kongress</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Frage ans Publikum: Was entscheidet der Algorithmus?
+                            </li>
+                            <li>
+                                Dem Algorithmus unbekannte Fakten:<br>
+                                <br>
+                                Die Person ist Chemie <b>(2)</b> Student mit Nebenfach Gesellschaftswissenschaften <b>(1)</b>, <br/>
+                                weiter möchte sie als Hobby mit dem Angeln anfangen <b>(3)</b> und hat sich den Handwerker gespart <b>(4)</b>.
+                            </li>
+                            <li>
+                                Reflexion:<br>
+                                    War die Entscheidung gerechtfertigt?<br>
+                                    Hatten wir zu viele oder zu wenig Daten?
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sector" id="fragen">
+                <ul>
+                    <li>Welche Probleme kann es mit der Datenbasis geben?</li>
+                    <li>Wie lassen sich diese Probleme in der Datenbasis reduzieren/verhindern?</li>
+                    <li>Wo ist die Grenze wischen besseren Daten und der Privatsphäre?</li>
+                </ul>
+            </div>
+            
+            <div class="sector" id="literatur">
+                <ul class="references" id="references">
+                    <li>
+                        <p class="reference">
+                            <span class="authors">
+                                <span class="author">
+                                    <span class="lastname">Baeza-Yates</span>
+                                    <span class="firstname">Richardo</span>
+                                </span><span class="author">
+                                    <span class="lastname">Baeza-Yates</span>
+                                    <span class="firstname">Richardo</span>
+                                </span><span class="author">
+                                    <span class="lastname">Baeza-Yates</span>
+                                    <span class="firstname">Richardo</span>
+                                </span>
+                            </span>
+                            <span class="issue-date">June 2018</span>
+                            <span class="title">Bias on the Web</span>
+                            <span class="journal">
+                            <span class="journal-title">Communications of the ACM</span>
+                            <span class="volume">61</span><span class="number">6</span><span class="pages"><span class="from">54</span><span class="to">61</span></span><span class="numpages">8</span></span>
+                            <span class="doi">10.1145/3209581</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reference">
+                            TODO
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="start" id="home">
+                Wilkommen auf der Startseite.<br/>
+                Bitte nutzen die Obenbefindliche Navigationsleiste zur navigation.
+            </div>
+        
+            <nav class="header" id="topNavBar">
+                <a href="#home">Home</a>
+                <a href="#zusammenfassung">Zusammenfassung</a>
+                <a href="#fragen">Fragen</a>
+                <a href="#anregungen">Anregungen</a>
+                <a href="#literatur">Literatur</a>
+            </nav>
+            
+        </div>
+    </body>
+</html>

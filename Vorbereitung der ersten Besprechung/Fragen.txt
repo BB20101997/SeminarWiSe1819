@@ -1,3 +1,0 @@
-Welche Probleme kann es mit der Datenbasis geben?
-Wie lassen sich diese Probleme in der Datenbasis reduzieren/verhindern?
-Wo ist die Grenze wischen besseren Daten und der Privatsphäre?
