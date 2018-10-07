@@ -55,6 +55,14 @@
                 text-align: center;
             }
             
+            .author:nth-child(6) ~ .author:not(:last-child) {
+                display: none;
+            }
+            
+            .author:nth-child(7) ~ .author:last-child::before {
+                content: "...";
+            }
+            
             .references > li {
                 list-style-type: none;
             }
@@ -105,7 +113,7 @@
             }
 
             .url::before {
-                content: "Retrieved\00a0 from\A";
+                content: "Retrieved\00a0 from\a";
                 white-space: pre-line;
             }
             
@@ -137,19 +145,19 @@
             .firstname::after {
                 content: ". ";
                 font-size: 1rem;
-		white-space: pre;
+                white-space: pre;
             }
 
             .firstname:last-child::after {
                 content: "., ";
                 font-size: 1rem;
-		white-space: pre;
+                white-space: pre;
             }
             
             .author:last-child .firstname:last-child::after {
                 content: ". ";
                 font-size: 1rem;
-		white-space: pre;
+                white-space: pre;
             }
             
             .author:last-child:not(:only-child)::before {
@@ -261,6 +269,7 @@
                             <span class="journal-title">Communications of the ACM</span>
                             <span class="volume">61</span><span class="number">6</span><span class="pages"><span class="from">54</span><span class="to">61</span></span><span class="numpages">8</span></span>
                             <span class="doi">10.1145/3209581</span>
+                            <a class="url" href="https://cacm.acm.org/magazines/2018/6/228035-bias-on-the-web/fulltext">https://cacm.acm.org/magazines/2018/6/228035-bias-on-the-web/fulltext</a>
                         </p>
                     </li>
                     <li>
@@ -276,7 +285,7 @@
                             <span class="journal">
                                 <span class="journal-title">The Verge</span>
                             </span>
-                            <span class="url">https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist</span>
+                            <a class="url" href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist</a>
                         </p>
                     </li>
                     <li>
@@ -286,7 +295,7 @@
                             </span>
                             <span class="issue-date">12 January 2017</span>
                             <span class="title">Statement on Algorithmic Transparency and Accountability</span>
-                            <span class="url">https://www.acm.org/binaries/content/assets/public-policy/2017_usacm_statement_algorithms.pdf</span>
+                            <a class="url" href="https://www.acm.org/binaries/content/assets/public-policy/2017_usacm_statement_algorithms.pdf">https://www.acm.org/binaries/content/assets/public-policy/2017_usacm_statement_algorithms.pdf</a>
                         </p>
                     </li>
                     <li>
@@ -306,7 +315,360 @@
                             <span class="journal">
                                 <span class="journal-title">Mediative</span>
                             </span>
-                            <span class="url">http://www.mediative.com/whitepaper-the-evolution-of-googles-search-results-pages-effects-on-user-behaviour/</span>
+                            <a class="url" href="http://www.mediative.com/whitepaper-the-evolution-of-googles-search-results-pages-effects-on-user-behaviour/">http://www.mediative.com/whitepaper-the-evolution-of-googles-search-results-pages-effects-on-user-behaviour/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reference">
+                            <span class="authors">
+                                <span class="author">
+                                    <span class="lastname">Mercer</span>
+                                    <span class="firstname">Andrew</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Deane</span>
+                                    <span class="firstname">Claudia</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">McGeeney</span>
+                                    <span class="firstname">Kyley</span>
+                                </span>
+                            </span>
+                            <span class="issue-date">9 November 2016</span>
+                            <span class="title">Why 2016 election polls missed their mark</span>
+                            <span class="journal">
+                                <span class="journal-title">Pew Research Center</span>
+                            </span>
+                            <a class="url" href="http://www.pewresearch.org/fact-tank/2016/11/09/why-2016-election-polls-missed-their-mark/">http://www.pewresearch.org/fact-tank/2016/11/09/why-2016-election-polls-missed-their-mark/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reference">
+                            <span class="authors">
+                                <span class="author">
+                                    <span class="lastname">Silberzahn</span>
+                                    <span class="firstname">Raphael</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Uhlmann</span>
+                                    <span class="firstname">Eric</span>
+                                    <span class="firstname">L</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Martin</span>
+                                    <span class="firstname">Daniel</span>
+                                    <span class="firstname">P</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Anselmi</span>
+                                    <span class="firstname">Pasquale</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Aust</span>
+                                    <span class="firstname">Frederik</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Awtrey</span>
+                                    <span class="firstname">Eli</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Bahník</span>
+                                    <span class="firstname">Štěpán</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Bai</span>
+                                    <span class="firstname">Feng</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Bannard</span>
+                                    <span class="firstname">Colin</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Bonnier</span>
+                                    <span class="firstname">Evelina</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Carlsson</span>
+                                    <span class="firstname">Rickard</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Cheung</span>
+                                    <span class="firstname">Felix</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Christensen</span>
+                                    <span class="firstname">Garret</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Clay</span>
+                                    <span class="firstname">Russ</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Craig</span>
+                                    <span class="firstname">Maureen</span>
+                                    <span class="firstname">A</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Dalla Rosa</span>
+                                    <span class="firstname">Anna</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Dam</span>
+                                    <span class="firstname">Lammertjan</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Evans</span>
+                                    <span class="firstname">Methew</span>
+                                    <span class="firstname">H</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Flores Cervantes</span>
+                                    <span class="firstname">Isamael</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Fong</span>
+                                    <span class="firstname">Nathan</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Gamez-Djokic</span>
+                                    <span class="firstname">Monica</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Glenz</span>
+                                    <span class="firstname">Andreas</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Gordon-McKeon</span>
+                                    <span class="firstname">Shauna</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Heaton</span>
+                                    <span class="firstname">Tim</span>
+                                    <span class="firstname">J</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Hederos Erikson</span>
+                                    <span class="firstname">Karin</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Heene</span>
+                                    <span class="firstname">Moritz</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Hofelich Mohr</span>
+                                    <span class="firstname">Alicia</span>
+                                    <span class="firstname">J</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Högden</span>
+                                    <span class="firstname">Fabia</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Hui</span>
+                                    <span class="firstname">Kent</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Johannesson</span>
+                                    <span class="firstname">Magnus</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Kalodimos</span>
+                                    <span class="firstname">Jonathan</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Kaszubowski</span>
+                                    <span class="firstname">Erikson</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Kennedy</span>
+                                    <span class="firstname">Deanna</span>
+                                    <span class="firstname">M</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Lei</span>
+                                    <span class="firstname">Ryan</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Lindsay</span>
+                                    <span class="firstname">Thomas</span>
+                                    <span class="firstname">A</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Liverani</span>
+                                    <span class="firstname">Silvia</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Madan</span>
+                                    <span class="firstname">Christopher</span>
+                                    <span class="firstname">R</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Molden</span>
+                                    <span class="firstname">Daniel</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Mollemann</span>
+                                    <span class="firstname">Eric</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Morey</span>
+                                    <span class="firstname">Richard</span>
+                                    <span class="firstname">D</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Mulder</span>
+                                    <span class="firstname">Laetitia</span>
+                                    <span class="firstname">B</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Nijstad</span>
+                                    <span class="firstname">Bernard</span>
+                                    <span class="firstname">R</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Pope</span>
+                                    <span class="firstname">Nolan</span>
+                                    <span class="firstname">G</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Pope</span>
+                                    <span class="firstname">Bryson</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Prenoveau</span>
+                                    <span class="firstname">Jason</span>
+                                    <span class="firstname">M</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Rink</span>
+                                    <span class="firstname">Floor</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Robusto</span>
+                                    <span class="firstname">Egidio</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Roderique</span>
+                                    <span class="firstname">Hadiya</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Sandberg</span>
+                                    <span class="firstname">Anna</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Schlueter</span>
+                                    <span class="firstname">Elmar</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Schönebrodt</span>
+                                    <span class="firstname">Felix</span>
+                                    <span class="firstname">D</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Sherman</span>
+                                    <span class="firstname">Martin</span>
+                                    <span class="firstname">F</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Sommer</span>
+                                    <span class="firstname">S</span>
+                                    <span class="firstname">Amy</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Sotak</span>
+                                    <span class="firstname">Kirstin</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Spain</span>
+                                    <span class="firstname">Seth</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Spörlein</span>
+                                    <span class="firstname">Christoph</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Stafford</span>
+                                    <span class="firstname">Tom</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Stefanutti</span>
+                                    <span class="firstname">Luca</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Täuber</span>
+                                    <span class="firstname">Susanne</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Ullrich</span>
+                                    <span class="firstname">Johannes</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Vianello</span>
+                                    <span class="firstname">Michelangelo</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Wagenmakers</span>
+                                    <!--<span class="firstname">Eric-Jan</span>-->
+                                    <span>E.-J.,</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Witkowiak</span>
+                                    <span class="firstname">Maciej</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Yoon</span>
+                                    <span class="firstname">Sangsuk</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Nosek</span>
+                                    <span class="firstname">Brian</span>
+                                    <span class="firstname">A</span>
+                                </span>
+                            </span>
+                            <span class="issue-date">25 August 2018</span>
+                            <span class="title">Many analysts, one dataset: Making transparent how variations in analytical choices affect results</span>
+                            <span class="journal">
+                                <span class="journal-title">Pew Research Center</span>
+                            </span>
+                            <span class="doi">10.31234/osf.io/qkwst</span>
+                            <a class="url" href="https://psyarxiv.com/qkwst/">https://psyarxiv.com/qkwst/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reference">
+                            <span class="authors">
+                                <span class="author">
+                                    <span class="lastname">Oltenau</span>
+                                    <span class="firstname">Alexandra</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Castillo</span>
+                                    <span class="firstname">Carlos</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Diaz</span>
+                                    <span class="firstname">Fernando</span>
+                                </span>
+                                <span class="author">
+                                    <span class="lastname">Kiciman</span>
+                                    <span class="firstname">Emre</span>
+                                </span>
+                            </span>
+                            <span class="issue-date">20 December 2016</span>
+                            <span class="title">Social Data: Biases, Methodological Pitfalls, and Ethical Boundaries</span>
+                            <a class="url" href="https://dx.doi.org/10.2139/ssrn.2886526">https://dx.doi.org/10.2139/ssrn.2886526</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reference">
+                            <span class="authors">
+                                <span class="author">
+                                    Executive Office of the President
+                                </span>
+                            </span>
+                            <span class="issue-date">May 2016</span>
+                            <span class="title">Big Data: A Report on Algorithmic Systems, Opportunity, and Civil Rights</span>
+                            <a class="url" href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/2016_0504_data_discrimination.pdf">https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/2016_0504_data_discrimination.pdf</a>
                         </p>
                     </li>
                 </ul>
@@ -314,7 +676,9 @@
             
             <div class="start" id="home">
                 Wilkommen auf der Startseite.<br/>
-                Bitte nutzen die Obenbefindliche Navigationsleiste zur navigation.
+                Bitte nutzen die Obenbefindliche Navigationsleiste zur navigation.<br/>
+                Unter verwendung von Firefox kann es zu anzeige Fehlern kommen,<br/>
+                getestet wurde diese Seite unter Chrome Version 69.0.3497.100 (Offizieller Build)(64-Bit)
             </div>
         
             <nav class="header" id="topNavBar">
