@@ -1,0 +1,63 @@
+\newif\ifhandout %create boolean variable handout
+
+\handoutfalse %set handout to false
+
+\ifhandout %test if we want to create handout or slides
+	\documentclass[handout]{beamer}
+	\usepackage{pgfpages}
+	\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
+\else 
+
+	\documentclass{beamer}	
+
+\fi
+
+\usepackage[utf8]{inputenc} % Charakter-Kodierung
+\usepackage[german]{babel} % Sprache
+
+%\usepackage[table,xcdraw]{xcolor} % Tabellen Farben
+\usepackage{tabularx} % Dynamische Tabellenbreite
+\usepackage{tcolorbox} % Graue Boxen
+\usepackage{hyperref} % url Umgebung
+\usepackage{natbib} % Bibliographie
+\usepackage{fancyhdr} % Header und Footer
+\usepackage{multirow} % Multizeile
+\usepackage{geometry} % Page layout
+%\usepackage{color} % Text Farben
+\usepackage{longtable} % lange Tabelle
+
+% Bibstyle
+\bibliographystyle{plain}
+
+\setbeamertemplate{footline}[frame number]
+
+\setbeamertemplate{headline}{
+%\includegraphics[width=4cm]{img/cau-logo-2017}
+\hfill%
+%\includegraphics[width=1cm]{img/se-logo}
+\hrule
+}
+
+% Titelseite
+
+\title{
+	Einfluss der Datenbasis\\
+	\color{gray}
+	Bennet Bleßmann\\
+}
+
+\date{\today}
+
+
+% Dokument
+
+\begin{document}
+	\input{frame/title}
+	\mode<beamer>{	
+		\frame{\frametitle{Inhaltsverzeichnis}\tableofcontents}
+	}
+	\input{frame/introduction}
+	\input{frame/problems}
+	\input{frame/solutions}
+	\input{frame/ethics}
+\end{document}
