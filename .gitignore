@@ -1,2 +1,10 @@
 /Quellen/
 /Prüfungsleistung.png
+*.tex.bak
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc

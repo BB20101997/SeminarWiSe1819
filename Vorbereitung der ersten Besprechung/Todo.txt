@@ -1,16 +1,11 @@
+*Sie halten Ihren Vortrag am 19.11.18
+
 ########################################################################################
 ######################################### TODO #########################################
 ########################################################################################
 
-*Sie halten Ihren Vortrag am 19.11.18
-
-*das Portfolio bitte an mich und Herrn Wilke freigeben
-
 *der Vortrag sollte enthalten: Problembeschreibung, Beispiele, Lösungen
 
-*Sie berücksichtigen in Ihrer Präsentation darüber hinaus bitte die folgenden Themen und passen entsprechend Ihren Text an: Repräsentativität; unscorables
-
-*Sie können gerne noch Literatur aus den anderen Themengebieten lesen (vor allem: Sonderheft Informatik Spektrum über das Uni-Netz lesbar)
 
 *bis zum 18.10.18 24 Uhr das Portfolio überarbeiten/ergänzen und dann wieder an mich und Herrn Wilke freigeben – insbesondere im Hinblick auf 
     1) Gliederung der Präsentation (10-15 Überschriften für Folien bilden), 
@@ -25,8 +20,14 @@
 ########################################################################################
 ######################################### DONE #########################################
 ########################################################################################
+*das Portfolio bitte an mich und Herrn Wilke freigeben
+
+*Sie berücksichtigen in Ihrer Präsentation darüber hinaus bitte die folgenden Themen und passen entsprechend Ihren Text an: Repräsentativität; unscorables
+
+*Sie können gerne noch Literatur aus den anderen Themengebieten lesen (vor allem: Sonderheft Informatik Spektrum über das Uni-Netz lesbar)
 
 *bitte recherchieren Sie noch weitere Literatur und nutzen Sie den APA-Zitationsstil bei der Angabe der Referenzen
+
 Füge Literatur dem Literaturverzeichnis hinzu
 https://cacm.acm.org/magazines/2018/6/228035-bias-on-the-web/fulltext
 https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist
