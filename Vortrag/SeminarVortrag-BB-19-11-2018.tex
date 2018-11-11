@@ -7,9 +7,7 @@
 	\usepackage{pgfpages}
 	\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
 \else 
-
 	\documentclass{beamer}	
-
 \fi
 
 \usepackage[utf8]{inputenc} % Charakter-Kodierung
@@ -29,7 +27,13 @@
 % Bibstyle
 \bibliographystyle{plain}
 
-\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}[frame number]
+
+\setbeamertemplate{footline}{
+	\hfill
+	\insertframenumber /\inserttotalframenumber
+	\hrule
+}
 \setbeamertemplate{headline}{
 %\includegraphics[width=4cm]{img/cau-logo-2017}
 \hfill%
@@ -59,4 +63,5 @@
 	\input{frame/problems}
 	\input{frame/solutions}
 	\input{frame/ethics}
+	\input{frame/discussion}
 \end{document}
