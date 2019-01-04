@@ -1,3 +1,5 @@
 # SeminarWiSe1819
 
-[index.html](https://bb20101997.github.io/SeminarWiSe1819/Final/)
+[Präsentations Webseite - Final](https://bb20101997.github.io/SeminarWiSe1819/Final/)
+
+[Blogpost](https://bb20101997.github.io/SeminarWiSe1819/Blogeintrag/#home)
