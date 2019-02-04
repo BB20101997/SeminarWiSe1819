@@ -1,4 +1,4 @@
-/Quellen/
+﻿/Quellen/
 /Prüfungsleistung.png
 *.tex.bak
 *.aux
@@ -9,3 +9,8 @@
 *.synctex.gz
 *.toc
 *.pdf
+/Poster-Paper/comment.cut
+/Poster-Paper/sample-base.bib.bak
+/Poster-Paper/sample-sigconf-blx.bib
+/Poster-Paper/sample-sigconf.xcp
+!/Poster-Paper/sampleteaser.pdf
