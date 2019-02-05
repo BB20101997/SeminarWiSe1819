@@ -14,3 +14,8 @@
 /Poster-Paper/sample-sigconf-blx.bib
 /Poster-Paper/sample-sigconf.xcp
 !/Poster-Paper/sampleteaser.pdf
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.bib.bak
