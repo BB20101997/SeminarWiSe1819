@@ -5,7 +5,10 @@
 
 \PassOptionsToPackage{ngerman}{babel}
 
-\usepackage[style=ACM-Reference-Format,backend=biber,sorting=none]{biblatex}
+\usepackage[style=apa,
+citestyle=apa,
+backend=biber,
+sorting=none]{biblatex}
 \addbibresource{references.bib}
 
 %
@@ -162,89 +165,18 @@ Problems which may occur in any of the development phases.
 % the first part of the formatted document.
 \maketitle
 
-\section{Introduction}
 
-This Paper will at first describe possible Problems when applying Deep-Learning technologies and their possible effects. The Problems will be grouped based on the development phase we expect them to be rooted in. After the Problems have been described it will if possible present general solution to said Problems or otherwise it might give solutions for special cases. It shall me noted that some of these Problems apply to software development of any kind.
-
-\section{Definitions}
-
-\subsection{A Problem}
-A Problem is anything which may result in unwanted negative effects of any kind.
-
-\subsection{The Phases of Development}
-For the Phases of development this paper will assume the following five stages similar to those found in the Waterfall model.
-In real world application these phases might occur in parallel or multiple times or not at all.
-
-The first Phase of Development is the phase of discovering and evaluating the Projects requirements, usually these might be constrained by a customers wishes and budget.
-
-The second Phase of Development is the planning Phase where based on the result of the first Phase will be decided on the general structure of the Project.
-
-The third Phase of Development is the Phase of actually implementing the Projects Plan and requirements.
-
-The fourth Phase is where we have a larger divergent from the waterfall model as this is the Phase where the Algorithm will be trained, this is not a phase found in typical software development.
-
-The last Phase is the Phase of Usage and Maintenance where the Product will be applied in the world and needs to be maintained.
-
-\section{Problems}
-
-\subsection{Requirements Phase}
-Problems occurring and not being acknowledged in this phase
-might be hard to resolve at a later stage as this phase presents the 
-foundation for all further phases.
-
-\paragraph{Vague Goal}
-Problems in this Phase include a vaguely defined goal,
-for construction a selection algorithm this might be 
-an undefined fairness metric resulting in an algorithm considered unfair.
-
-\paragraph{Morally acceptability}
-Another Problem which might be less concrete might be the consideration if an algorithms should be developed at all,
-as an algorithm might be possible but morally unwanted.
-
-\paragraph{Economical incentive}
-Probably the most tangible Problem is the collision of moral and ethics with economics, given the current economic structure it would be unreasonable in most circumstances to produce a socially beneficial algorithm without any directly visible economic benefit for any participating party, on the other hand it might be of interest to produce an ethical, morally or socially problematic algorithm for ones economically benefit. 
-
-\paragraph{Evaluation of Consequences}
-% Fehelende Folgenabschätzung
-
-\subsection{Planning Phase}
-Intro
-
-\paragraph{Incorrect Model}
-\paragraph{Insufficient Safety Considerations}
-
-\subsection{Development Phase}
-Intro
-\paragraph{Missing Dokumentation}
-% Mangelnde Dokumentation (Annahmen, Funktionsweise etc.)
-
-\paragraph{Missing Data Protection}
-% Mangelder/Vernachlässigter Datenschutz
-
-\subsection{Training Phase}
-Into
-\paragraph{Insufficient Representation of Reality}
-% Unzureichende Abbildung der Realitzät durch Trainingsdaten
-\paragraph{Dirty Data}
-% Unreine Daten
-\paragraph{Irrelevant Data}
-% Irrelevante Daten
-\paragraph{Contaminated Data}
-% Korrekte aber unpassende Daten (wiederspiegeln von Rassismus in der Gesselschaft etc.)
-
-\subsection{Deployment/Maintenance Phase}
-% Fehlende Nachvollziehbarkeit
-% Unvorhergesehene Einflüsse
-% Mangelndes Vertrauen in Technick (Bevölkerung)
-% Unvorhergesehene Folgen (Requirement Phase 4?)
-% Unklare Haftung (Nutzer, Produzent, Entwickler ?)
-
+\input{sections/introduction.tex}
+\input{sections/definitions.tex}
+\input{sections/problems.tex}
+\input{sections/solutions.tex}
+\input{sections/summary.tex}
 
 %
 % The acknowledgments section is defined using the "acks" environment (and NOT an unnumbered section). This ensures
 % the proper identification of the section in the article metadata, and the consistent spelling of the heading.
 \begin{acks}
-To Daniela Stollberg for helping to check the Paper for Grammatical and Syntactical errors.
+To Daniela Stollberg for helping to check the Paper for errors.
 \end{acks}
 
 %

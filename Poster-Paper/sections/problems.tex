@@ -1,0 +1,120 @@
+\section{Problems}
+
+\subsection{Requirements Phase}
+Problems occurring and not being acknowledged in this phase
+might be hard to resolve at a later stage as this phase presents the 
+foundation for all further phases. 
+
+\paragraph{Vague Goal}
+%explanaition
+Problems in this Phase include a vaguely defined goal,
+for construction a selection algorithm this might be 
+an undefined fairness metric resulting in an algorithm considered unfair.
+%example
+One might have the goal to increase ones profit, this may be done by increase efficiency increasing the profit margin on the product or by implementing better
+advertisement strategies to get more buying consumers. Both would be valid strategies but depending on the circumstances one might be preferred over the other and each entails other possible problems.
+
+\paragraph{Moral acceptability}
+%explanaition
+Another Problem which might be less concrete might be the consideration if an algorithms should be developed at all,
+as an algorithm might be possible but morally unwanted.
+%example 
+It is possible, in that I have no doubt, to develop better filters for the Great Firewall of China, but from a humanitarian standpoint I would disagree to build such.
+
+\paragraph{Economical incentive}
+%explanation
+Probably the most tangible Problem is the collision of moral and ethics with economics, given the current economic structure it would be unreasonable in most circumstances to produce a socially beneficial algorithm without any directly visible economic benefit for any participating party, on the other hand it might be of interest to produce an ethical, morally or socially problematic algorithm for ones economically benefit. 
+%example
+An economic incentive could make one think twice about writing filters for China, while on the other hand
+writing software to circumvent such filters would possibly fall under 
+missing economic incentive.
+
+
+%TODO determin if this should stay and if it should then add content
+\paragraph{No Evaluation of Consequences}
+% Fehelende Folgenabschätzung
+
+\subsection{Planning Phase}
+As this is the phase in which we expect most decisions to be made and 
+the most information to become available, this is also a rather important phase.
+
+\paragraph{Incorrect/Insufficient Model}
+%explanation
+This Problem it that of getting to the point between an oversimplified and an overcomplicated Model and also making sure 
+to take steps for trained models to not stop working or behave unexpected in production.
+%example
+The first point is pretty clear a model too simple is comparable with a train without tracks it's missing something, the next point would be the overcomplicated Model where the relevant parts will drown under the noise of the superfluous. For the last part take a look at Microsofts Chatbot that turned into an  "[...] asshole in less than a day." (\cite{James2018}), as the training data was filtered but the production data was not.
+
+\paragraph{Insufficient Safety Considerations}
+%explanation
+This Problem combines the consideration about IT-Security and Data Protection. Here it is important to consider all harm that could result from data leaks or miss use and to reduce this risk where possible to the minimum.
+%example 
+%TODO are examples nessecary here?
+
+
+\subsection{Development Phase}
+As this is where the requirements based on the previous conceived plan are actually implemented
+
+\paragraph{Missing Dokumentation}
+% Mangelnde Dokumentation (Annahmen, Funktionsweise etc.)
+The Problem with missing documentation is mostly about undocumented assumption which might result in them not being met
+and therefore resulting in undefined behaviour.
+Documentation can also helps with Maintenance a phase that will be discussed later in this paper.
+
+\paragraph{Missing Data Protection}
+% Mangelder/Vernachlässigter Datenschutz
+{ \color{red} TODO write this less sensational }
+This Problem is a continuation from Insufficient Safe Considerations, here it is important to not only store sensitive data securely but also to handle it securely in all other aspects, what good does a secure database do if the data is transmitted using an unsecured connection or if 
+proper permissions are not checked prior to exposing the data to a requestee and what good does a password do if every possible combination can be tried in minutes.
+
+\subsection{Training Phase}
+This is the last phase before the algorithm goes into production and also the one where the problems might be hard to predict, observe directly and diverge most from traditional programming. 
+
+\paragraph{Insufficient Representation of Reality}
+% Unzureichende Abbildung der Realitzät durch Trainingsdaten
+The Problem of insufficient Representation is met where 
+the trainings Data and Reality diverge in for the problem 
+essential parts, this can be seen (\cite{2016}) in the difference between 
+elections predictions and elections result, where the difference
+between prediction and result is sometimes significant.
+
+\paragraph{Dirty Data}
+% Unreine Daten
+This Problem it that of incorrect Data, this might be misspelled Names, mislabelled Images or in any other way incorrect Information. For example a misplaced Comma in a Report to a Credit Scoring firm might ruin lives.
+
+\paragraph{Irrelevant Data}
+% Irrelevante Daten
+%alg shall be used in amarica trained on world wide data
+Irrelevant Data is present when the data contains 
+objects which are not supposed to be in the production 
+environment, this does not mean the data is incorrect,
+for example an algorithm to be only deployed to evaluate
+Irish Consumers that is also trained with data from 
+Belgian Consumers would fall into this category.
+%TODO what is the problem with this
+
+\paragraph{Contaminated Data}
+% Korrekte aber unpassende Daten (wiederspiegeln von Rassismus in der Gesselschaft etc.)
+Additionally to the already mentioned data can be problematic 
+in at least another way, as even correct, clean, correctly representing data might not result in what we want.
+This can best be seen at the example of Amazons employment evaluation algorithm (\cite{Higginbottom2018}), it was given the data of the currently employed workforce and was suppose to evaluate applicants if they would be a good addition, 
+
+
+\subsection{Deployment/Maintenance Phase}
+{\color{red} TODO}
+
+\paragraph{Lack of Traceability}
+% Fehlende Nachvollziehbarkeit
+
+
+\paragraph{Unforeseen Influences}
+% Unvorhergesehene Einflüsse
+
+
+\paragraph{Unforeseen Consequences}
+% Unvorhergesehene Folgen (Requirement Phase 4?)
+
+
+\paragraph{Liability and Legal Responsibility}
+% Unklare Haftung (Nutzer, Produzent, Entwickler ?)
+
