@@ -1,16 +1,16 @@
 \section{Solutions}
 In this section I will present possible solution
-for the individual Problems where possible.
+for the individual problems where possible.
 
 \subsection{Vague Goals}
-When a vague goal is encountered the best option is to reiterate this goal with the entity that has set this goal an let them specify what they meant. For our example where the options to increase Profitability where better advertisement or finding inefficiencies and removing them, these options could than be presented to the client so they can decide which to pursue.
+When a vague goal is encountered the best option is to reiterate this goal with the entity that has set this goal an let them specify what they meant. For our example where the options to increase profitability where better advertisement or finding inefficiencies and removing them, these options could than be presented to the client so they can decide which to pursue.
 
 
-\subsection{Moral acceptability}
-If the Problem would be that the algorithm could be misused
+\subsection{Moral Acceptability}
+If the problem would be that the algorithm could be misused
 this might be fixable, as one could try to eliminate or limit this possibility to a satisfiable degree.
 
-\subsection{Economic incentive}
+\subsection{Economic Incentive}
 Depending on the algorithm the government can
 give incentives to reduce the financial load
 to produce algorithms beneficial to the public and
@@ -18,19 +18,40 @@ produce laws limiting the extend of e.g. privacy invading algorithms.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%incorrect/insufficient model
-%insufficient Safety Considerations
+%\subsection{Incorrect/Insufficient Model}
+%\subsection{Insufficient Safety Considerations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%missing dokumentation
-%missing data protection
+\subsection{Missing Documentation}
+To reduce the amount of missing documentation
+one can use tools like for example linters to warn if 
+functions are undocumented. Also one can write documentation 
+first before writing the code similar to test driven development.
+
+%\subsection{Missing Data Protection}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%insufficient reality representation
-%dirty data
+\subsection{Insufficient Representation of Reality}
+There will in most cases be asymmetries between the production
+and testing environment, but reducing these should help with 
+this issue for example when training a chatbot if your production environment doesn't filter the messages your testing
+environment shouldn't filter as well, that way the bot 
+learns how to react messages that would have been filtered, on the other hand  if only the testing environment would be filtered, how the bot responds messages that would have been filtered in testing
+is basically undefined behaviour.
+
+\subsection{Dirty Data}
+The amount of dirty data can be reduced by limiting 
+the amount of manual data entry as this is types of errors 
+are usually caused by human error. This is not to say that other sources are
+always correct optical character recognition also known as OCR can 
+also misidentify characters and cause similar problems.
+Where available comparing different sources may also be employed to detect errors.
+
 %Irrelevant data
+
 %contaminated data
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
