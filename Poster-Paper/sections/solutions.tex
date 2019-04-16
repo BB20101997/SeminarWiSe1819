@@ -1,67 +1,70 @@
 \section{Solutions}
-In this section I will present possible solution
-for the individual problems where possible.
+In this section I will present possible solutions
+for the individual problems where possible. Otherwise I will try to explain why there is no solution.
 
 \subsection{Vague Goals}
-When a vague goal is encountered the best option is to reiterate this goal with the entity that has set this goal an let them specify what they meant. For our example where the options to increase profitability where better advertisement or finding inefficiencies and removing them, these options could than be presented to the client so they can decide which to pursue.
+When a vague goal is encountered the best option is to reiterate this goal with the entity that has set this goal and let them specify what they meant. For our example, where the options to increase profitability where better advertisement or finding inefficiencies and removing them, these options could than be presented to the client so they can decide which to pursue.
 
 
 \subsection{Moral Acceptability}
 If the problem would be that the algorithm could be misused
-this might be fixable, as one could try to eliminate or limit this possibility to a satisfiable degree.
+this might be fixable, as one could try to eliminate or limit this possibility to a satisfactory degree.
 
 \subsection{Economic Incentive}
-Depending on the algorithm the government can
-give incentives to reduce the financial load
-to produce algorithms beneficial to the public and
-produce laws limiting the extend of e.g. privacy invading algorithms.
+Depending on the algorithm the government can give incentives to reduce the financial load to produce algorithms beneficial to the public or enact laws limiting the extend of privacy invading algorithms et cetera.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsection{Incorrect/Insufficient Model}
-%\subsection{Insufficient Safety Considerations}
+\subsection{Incorrect/Insufficient Model}
+In the case of a not matching model there is no general solution
+available as depending on the situation one model might work for one goal 
+while the next needs a different model. Therefore it is necessary for a human to make sure the model matches the situation and goal of the project.
+
+%TODO we left of here
+
+\subsection{Insufficient Safety Considerations}
+First and foremost one should start by assessing potential hazards, their likelihood and consequences and then find attainable solutions that can reduce their severity and their probability of occurrence. To reduce the chance for internal threats one can, for example, minimize each person's access to the smallest extend necessary, as is already done in most places to some amount. For physical safety one could implement fail-safe and fail-secure mechanism. These are not a viable option in all cases, for example in an autonomous vehicle in a trolley dilemma scenario.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Missing Documentation}
 To reduce the amount of missing documentation
-one can use tools like for example linters to warn if 
+one can use tools like linters to warn if 
 functions are undocumented. Also one can write documentation 
-first before writing the code similar to test driven development.
-
-%\subsection{Missing Data Protection}
-
+first before writing the code, similar to test driven development.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Insufficient Representation of Reality}
-There will in most cases be asymmetries between the production
-and testing environment, but reducing these should help with 
-this issue for example when training a chatbot if your production environment doesn't filter the messages your testing
-environment shouldn't filter as well, that way the bot 
-learns how to react messages that would have been filtered, on the other hand  if only the testing environment would be filtered, how the bot responds messages that would have been filtered in testing
-is basically undefined behaviour.
+\subsection{Restricted Representation of Reality}
+In most cases there will  be asymmetries between the production and testing environment, but reducing these should help with this issue. 
+When training a chatbot for example, if your production environment doesn't filter the messages, your test environment shouldn't filter as well.
+That way the bot learns how to react to messages that would have been filtered. 
+On the other hand, if only the testing environment would be filtered, it is basically undefined behaviour how the bot responds to messages that would have been filtered in testing.
 
-\subsection{Dirty Data}
-The amount of dirty data can be reduced by limiting 
-the amount of manual data entry as this is types of errors 
-are usually caused by human error. This is not to say that other sources are
-always correct optical character recognition also known as OCR can 
+\subsection{Incorrect Information}
+Incorrect information can be reduced by limiting 
+the amount of manual data entry as it is usually caused by human error. This is not to say that other sources are
+always correct. Optical character recognition, also known as OCR, can 
 also misidentify characters and cause similar problems.
-Where available comparing different sources may also be employed to detect errors.
+Where available, one may also compare different sources to detect errors.
 
-%Irrelevant data
+\subsection{Irrelevant Information}
+As with incorrect models, irrelevant data is highly specific to the situation and goal. Again, there is no general solution available.
+In the Irish and Belgian Customer example, where it was just deployed to Irish Customers the Belgian Customer data would be considered irrelevant.
+Now if it would also be deployed in Belgium the Belgian Customers data would no longer be irrelevant.
+Therefore this is a case where humans are needed to determine the correct solution.
 
-%contaminated data
+\subsection{Contaminated Data}
+Data contamination is difficult to resolve because removing biases can lead to a misrepresentation of reality. Also, as can be seen with the Amazon example (\cite{Higginbottom2018}), sometimes the problem is not simply solved by removing problematic data fields (gender) from data object (applications), where the data could be reconstructed from other information, in this case, the visited educational institutions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%lack of traceability  ¯\_(ツ)_/¯
-%Unforseen Influences and Consequences
-%Liability and Legal Responsibility
+\subsection{Lack of Traceability} %  ¯\_(ツ)_/¯
+The lack of traceability is in some ways inherent to deep-learning. As opposed to traditional programming the logic is not decided by human beings on the ground of reason, which can be traced back and explained, but rather through luck with the initial state and mathematical approximation methods to increase accuracy for known inputs. It is reproducible but this does not equal an explanation.
 
+\subsection{Unforeseen Influences and Consequences}
+These need to be dealt with on a case by case basis, since they are unforeseen per definition. This does not entail that their outreach can not be limited. As with safety consideration, one can reduce risks by fixing known issues and limiting privileges.
 
-
-
-
-
+\subsection{Liability and Legal Responsibility}
+In cases where the liability and legal responsibility is currently uncertain
+we either need to wait for courts to create precedence, or lawmakers need to create legislation to close these gaps of legal uncertainty.

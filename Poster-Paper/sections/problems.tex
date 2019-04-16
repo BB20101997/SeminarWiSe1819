@@ -5,19 +5,14 @@ Problems not being acknowledged in this phase might be hard to resolve at a late
 
 \subsubsection{Vague Goal}
 %explanaition
-Problems in this phase include a vaguely defined goal,
-for constructing a selection algorithm this might be 
-an undefined fairness metric resulting in an algorithm considered unfair.
-
+For example an unspecified fairness metric would be a vague goal for a selection algorithm that could result in an algorithm to be considered unfair.
 %example
-One might have the goal to increase ones profit. This may be done by increasing efficiency to expand the profit margin on the product, or by implementing better
-advertisement strategies to get more buying consumers. Both would be valid strategies but, depending on the circumstances, either might be preferred over the other and each entails other possible problems.
+Another example might be to have the goal to increase one's profit. This may be achieved by increasing efficiency to expand the profit margin on the product, or by implementing better advertisement strategies to get more buying consumers. Both would be valid strategies but, depending on the circumstances, either might be preferred over the other and each entails other possible problems. Therefore the goal to increase profit is vague as it is unclear which option is wanted.  
 
 \subsubsection{Moral Acceptability}
 
 %explanaition
-Another problem which is probably less concrete might be the consideration whether an algorithms should be developed at all,
-as an algorithm can be possible but morally unwanted.
+Another less concrete problem is the consideration whether an algorithms should be developed at all in the sense that an algorithm can be technically possible but morally unwanted.
 
 %example 
 As an example:
@@ -28,7 +23,7 @@ I have no doubt that it is possible to develop better filters for the Great Fire
 %explanation
 Probably the most tangible problem is the collision of morality and ethics with economics. 
 In most circumstances, in  the current economic structure, it would be unreasonable to produce an algorithm without any direct economic benefit, even if it would be socially beneficial. 
-On the other hand it might be of interest to produce an ethically, morally or socially problematic algorithm for one's economically benefit. 
+On the other hand it might be of interest to produce an ethically, morally or socially problematic algorithm for one's economical benefit. 
 
 %example
 For example:
@@ -41,99 +36,75 @@ the most information to become available, this is also a rather important phase.
 \subsubsection{Incorrect/Insufficient Model}
 %explanation
 
-This problem is that of balancing an oversimplified and an overcomplicated model.
+A model might be insufficient by representing reality oversimplified or overcomplicated.
 
 %example
 For example the chatbot that had been deployed by Microsoft
- which turned into "[..] a racist asshole in less than a day" (\cite{James2018}). The model of the chatbot was missing 
- the difference between acceptable and unacceptable tweets,
- therefore being oversimplified.
+ which turned into "[..] a racist asshole in less than a day" (\cite{James2018} was oversimplified, missing the difference between acceptable and unacceptable tweets.
  
 \subsubsection{Insufficient Safety Considerations}
 %explanation
-
-This problem combines the consideration of IT security and data protection. It is important to consider all harm that could result from data leaks or misuse and to minimize this risk.
+This problem includes unconsidered IT security or data protection risks, as well as, where applicable, risk to the physical world.
+External threats are usually sufficiently covered, while internal threats are sometimes forgotten or not sufficiently treated. 
 
 \subsection{Implementation Phase}
 This phase is basically identical to your typical implementation 
-phase an therefore the same problems apply.
+phase and therefore the same problems apply.
 
 \subsubsection{Missing Documentation}
 % Mangelnde Dokumentation (Annahmen, Funktionsweise etc.)
 
-The problem with missing documentation is mostly about undocumented assumption which might result in them not being met and therefore resulting in undefined behaviour. Documentation can also helps with the maintenance phase that will be discussed later in this paper.
-
-\subsubsection{Missing Data Protection}
-% Mangelder/Vernachlässigter Datenschutz
-
-{ \color{red} TODO write this less sensational }
-This problem is a continuation from insufficient safe considerations, here it is important to not only store sensitive data securely but also to handle it securely in all other aspects, what good does a secure database do if the data is transmitted using an unsecured connection or if 
-proper permissions are not checked prior to exposing the data to a requestee and what good does a password do if every possible combination can be tried in minutes.
+Missing documentation is mostly a problem in the case of undocumented assumptions which might result in unmet requirements and consequently in undefined behaviour. For example, if a function assumes inputs to be sanitised without this being documented, unsanitized data might be passed to it and lead to unwanted behaviour. Documentation can also help when maintaining a deployed product, which is part of a phase described later.
 
 \subsection{Training Phase}
 This is the last phase before the algorithm goes into production and also the one where the problems might be hard to predict, observe directly and diverge most from traditional programming. The focus will be on the data used for training rather than on the training itself.
 
-\subsubsection{Insufficient Representation of Reality}
+\subsubsection{Restricted Representation of Reality}
 % Unzureichende Abbildung der Realitzät durch Trainingsdaten
 
-The problem of insufficient representation is met where 
-the trainings data and reality diverge in for the problem 
-essential parts, this can be seen (\cite{2016}) in the difference between 
-elections predictions and elections result, where the difference
-between prediction and result is sometimes significant.
+Training data is insufficient representative when it diverges from reality in essential parts. This can be seen at the example of election predictions (\cite{2016}) in the difference between the prediction and the result, where the difference is sometimes significant.
 
-\subsubsection{Dirty Data}
+\subsubsection{Incorrect Information}
 % Unreine Daten
 
-This problem it that of incorrect data, this might be misspelled names, mislabelled images or in any other way incorrect information. For example a misplaced comma in a report to a credit scoring firm might ruin ones credit score which has the potential to ruin a life.
+Incorrect information might be misspelled names, mislabelled images et cetera. For example a misplaced comma in a report to a credit scoring firm might ruin one's credit score which has the potential to ruin a life.
 
-\subsubsection{Irrelevant Data}
+\subsubsection{Irrelevant Information}
 % Irrelevante Daten
 %alg shall be used in amarica trained on world wide data
 
 Irrelevant data is present when the data contains 
 objects which are not supposed to be in the production 
-environment, this does not mean the data is incorrect,
-for example an algorithm to be only deployed to evaluate
+environment. This does not mean the data is incorrect,
+for example an algorithm only to be deployed to evaluate
 Irish consumers that is also trained with data from 
 Belgian consumers would fall into this category.
 The problem is that in this example the algorithm
-would have to handle more with the same resources resulting
+would have to handle more varied inputs with the same resources, resulting
 in worse performance.
 
 \subsubsection{Contaminated Data}
 % Korrekte aber unpassende Daten (wiederspiegeln von Rassismus in der Gesselschaft etc.)
 
-Additionally to the already mentioned data can be problematic 
-in at least another way, as even correct, clean, correctly representing data might not result in what we want.
-This can best be seen at the example of Amazons employment evaluation algorithm (\cite{Higginbottom2018}), it was given the data of the currently employed workforce and was suppose to evaluate applicants if they would be a good addition.
-%TODO   ^ <- there was a comma previousely, is the somethig missing?
-
+Additionally to the already mentioned cases, data can be problematic 
+in at least one other way, as even correct, clean, truthfully representing data might not result in what was intended.
+This can best be seen in the example of Amazon's employment evaluation algorithm (\cite{Higginbottom2018}). It was given the data of the currently employed workforce and was suppose to evaluate if applicants would be a good addition.
+Since the workforce was dominantly male it was biased against females.
 
 \subsection{Deployment/Maintenance Phase}
-
-This phase mostly consist of problems inherent to
-deep-learning algorithms as such there are hardly 
+This phase mostly consists of problems inherent to
+deep-learning algorithms. As such they are hardly 
 able to be avoided.
 
 \subsubsection{Lack of Traceability}
 % Fehlende Nachvollziehbarkeit
 
-In oppose to traditional algorithms deep-learning
-suffer from a lack of traceability.
-In traditional algorithms an unusual result can 
-usually with reasonable effort be traced back to either 
-a human error meaning the result is but correct even if this is not obvious or an error in the algorithm which can than be corrected an therefore be resolved. This is simply not possible with current and possible future deep-learning algorithms. 
+In opposition to traditional algorithms, most deep-learning-algorithms are not comprehensible, as they are a set of numbers, computed based on some training data and an initial configuration, with no further justification, explanation or reason. In traditional algorithms an anomaly can usually be traced back to either an error in human intuition, meaning the result is correct even if this is not obvious, or an error in the algorithm which can than be resolved through correction. 
 
 \subsubsection{Unforeseen Influences and Consequences}
 % Unvorhergesehene Einflüsse
 
-Unforeseen influences and consequences mostly come in pairs
-as one usually is the result of the other.
-For example it has been demonstrated (\cite{Eykholt2017})
-that it is possible to modify street signs in a way 
-that an image classification algorithm misclassified 
-street signs with high confidence. 
+Unforeseen influences and consequences mostly come in pairs because one is usually the result of the other. For example it has been demonstrated (\cite{Eykholt2017})that it is possible to modify street signs in a way that an image classification algorithm misclassified street signs with high confidence, while being still legible from a human perspective.
 %(Payed Positive Reviews -> Useless Reviews)
 
 \subsubsection{Liability and Legal Responsibility}
@@ -143,5 +114,5 @@ As with all automated decision making processes
 it is not in all circumstances clear who is liable for 
 the decisions made and has to take responsibility.
 The example most talked about would probably be 
-that of autonomous vehicles assuming the vehicles driver and owner are the same person as well as cars manufacturer also building it's algorithm that still leaves two legal entities that could  be to blame the driver or the manufacturer.
-Depending on the level of autonomy and the manufacturer complying with due diligence it might even be the case that neither should be responsible, which might pose a problem to the legal system, especially where a party exists that normally would have received compensation from the responsible party.
+that of autonomous vehicles. Usually, either the driver or the manufacturer would be to blame for an accident, depending on the cause. In case of autonomous vehicles the car would be the main source of failure. This could cause a liability problem for manufacturers.   
+Depending on the level of autonomy and the manufacturer complying with due diligence it might even be the case that neither the manufacturer nor the owner should be responsible. Which might pose a problem to the legal system, especially where a party exists that normally would have received compensation from the responsible party.
